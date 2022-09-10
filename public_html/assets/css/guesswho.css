@@ -72,6 +72,10 @@ body {
   background-color: #fff;
 }
 
+.maindiv {
+  text-align: center;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
