@@ -11,7 +11,7 @@ const charB = {
     
 const charC = {
         names: ["SHAZAM", "CHAZAM", "XAZAM"],
-        chartips: [dc, " Sou uma criança ", " Me transformo em adulto. ", " Meu uniforme leva tem um raio amarelo no peito."],
+        chartips: [dc, " Sou uma criança. ", " Me transformo em adulto. ", " Meu uniforme leva tem um raio amarelo no peito."],
     }
 
 const charD = {
