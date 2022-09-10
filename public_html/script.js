@@ -150,6 +150,7 @@ function compute(){
     if (thissortedChar.names.includes(principalC)) {
         pontos -= 0
         document.getElementById("result").innerHTML = "Seu palpite é: " + principal + ". Você acertou! Seus pontos:" + pontos
+        return
     } else if (principal == "tip") {
         pontos -= 1
         document.getElementById("result").innerHTML = "Sua dica: " + thissortedChar.chartips[x] + " Seus pontos: " + pontos
@@ -159,7 +160,8 @@ function compute(){
         document.getElementById("result").innerHTML = "Errou! Seus pontos: " + pontos
     }
     
-    if (pontos <= 0) {        
+    if (pontos <= 0) {
+        let pontos = 0        
         document.getElementById("result").innerHTML = "Você perdeu! Seus pontos: " + pontos
     }
     return [pontos, x]

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Guess Who - Heroes | Um jogo de Caleb Silva</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/GuessWho-01.png" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">O Jogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#game" class="ml-4 nav-link btn btn-primary btn-sm rounded">Jogar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle">Um Jogo Desenvolvido por</h1>
+            <h1 class="title">Caleb Silva</h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <section  id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">O Jogo</h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3">Entenda um pouco a proposta</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">01</small>
+                            <h5 class="card-title mt-3"> A ideia <h5>
+                            <p class="mb-0">Este jogo foi desenvolvido apenas como uma maneira de praticar conceitos de programação. Para desenvolvê-lo, usei JavaScript, html e css.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">02</small>
+                            <h5 class="card-title mt-3">Leadmark<h5>
+                            <p class="mb-0">Muitas dos conceitos usados foram aproveitados de modelos gentilmente concedidos pela equipe <a href=https://www.free-css.com/free-css-templates/page282/leadmark target="_blank">LeadMark</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">03</small>
+                            <h5 class="card-title mt-3">Jogue e se divirta<h5>
+                            <p class="mb-0">Apesar de ser um jogo simples, você ainda pode se divertir! Em breve teremos rankings.</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <section class="section" id="game">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">Guess Who - Heroes</h6>
+            <h6 class="section-subtitle mb-5 text-center">Prove que você conhece o mundo dos heróis</h6>
+
+            <head>
+                <meta charset="utf-8">
+                <title>Guess Who - Heroes</title>
+                <script src="script.js"></script>
+                <link rel="stylesheet" href="style.css">
+                </head>
+                <div class="maindiv">
+                    
+                    <p><b>Digite um personagem para dar um palpite ou digite 'Tip' para pedir uma dica!<br></br>
+                        Você começa com 6 pontos. Cada dica custa 1 ponto; Cada erro custa 2 pontos.
+                    </b></p>
+                    <b>Palpite</b> <input type="string"  id="principal" class="ml-4 btn btn-primary btn-sm rounded">  <br/>
+                    <br></br>
+            
+                    <button class="ml-4 btn btn-primary btn-sm rounded" id="compute" onclick="compute();document.getElementById('principal').value = ''">Tentar</button> 
+                    <button class="ml-4 btn btn-primary btn-sm rounded" id="restart" onclick="window.location.reload()">Recomeçar</button>
+                    <br></br>
+                    <span id="result">
+            
+                    </span><br>
+                </br>
+                    <footer>
+            
+                        &#169; Este jogo foi desenvolvido por Caleb Silva
+                
+                    </footer>
+                    </div>        </div>
+    </section>
+
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">Telefone</h6>
+                    <p class="mb-4">+55 11 984959167</p>
+
+                    <h6 class="mb-0">Endereço</h6>
+                    <p class="mb-4">São Paulo - SP</p>
+
+                    <h6 class="mb-0">Email</h6>
+                    <p class="mb-0">caleb@ngprime.com</p>
+                    <p></p>
+                </div>
+                <div class="col-md-7">
+                    <form>
+                        <h4 class="mb-4">Mande um alô!</h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Nome">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Assunto">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Mensagem"></textarea>
+
+                            </div>
+                            <div class="form-group col-12 mb-0">
+                                <button type="submit" class="btn btn-primary rounded w-md mt-3">Enviar</button>
+                            </div>                          
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+            
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, Criado por <a href="https://www.linkedin.com/in/calebsleb/" target="_blank">Caleb Silva.</a>  Todos os Direitos Reservados </p>     
+            </footer>
+            
+        </div>
+    </section>
+	
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+
+    <script src="assets/js/leadmark.js"></script>
+
+</body>
+</html>
