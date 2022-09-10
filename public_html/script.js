@@ -142,16 +142,17 @@ let group = [charB, charC, charC, charD, charE, charF, charG, charH, charI, char
 let sortedChar = getRandomNumber(0, group.length)
 let thissortedChar = group[sortedChar]
 
-function compute(){
+function compute(stop){
 
     var principal = document.getElementById("principal").value;
     var principalC = principal.toUpperCase()
 
-    if (thissortedChar.names.includes(principalC)) {
+    if (principal.length === 0){
+        document.getElementById("result").innerHTML = "Por favor, recomece o jogo ou tente um palpite."
+    } else if (thissortedChar.names.includes(principalC)) {
         pontos -= 0
         document.getElementById("result").innerHTML = "Seu palpite é: " + principal + ". Você acertou! Seus pontos:" + pontos
-        return
-    } else if (principal == "tip") {
+    } else if (principalC == "TIP") {
         pontos -= 1
         document.getElementById("result").innerHTML = "Sua dica: " + thissortedChar.chartips[x] + " Seus pontos: " + pontos
         x++
@@ -164,5 +165,5 @@ function compute(){
         let pontos = 0        
         document.getElementById("result").innerHTML = "Você perdeu! Seus pontos: " + pontos
     }
-    return [pontos, x]
+    return [pontos, x, stop]
 }
