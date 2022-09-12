@@ -1,4 +1,5 @@
 // node.js Packages / Dependencies
+/*
 import { task, src as _src, dest, series, watch } from 'gulp';
 import sass, { logError } from 'gulp-sass';
 import uglify from 'gulp-uglify';
@@ -12,7 +13,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import jpgRecompress from 'imagemin-jpeg-recompress'; 
 import clean from 'gulp-clean';
 
-
+*/
 // Paths
 var paths = {
     root: { 
